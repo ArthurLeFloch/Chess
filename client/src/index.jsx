@@ -10,10 +10,12 @@ import {
 
 import "./style.css";
 
+import Play from "./pages/Play.jsx";
+
 const router = createBrowserRouter(createRoutesFromElements(
 	<Route path="/" element={<div><h1>Chess</h1><Outlet /></div>} >
 		<Route index element={<h3>Index</h3>} />
-		<Route path="play" element={<h3>Play</h3>} /> {/* Protected route */}
+		<Route path="play" element={<Play />} /> {/* Protected route */}
 		<Route path="login" element={<h3>Login</h3>} />
 		<Route path="*" element={<h3>Page not found</h3>} />
 	</Route>
