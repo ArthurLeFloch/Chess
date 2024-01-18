@@ -1,0 +1,24 @@
+.nav {
+	background-color: #222;
+	height: 60px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 50px;
+	box-sizing: border-box;
+	color: #fff;
+}
+
+.nav--link {
+	list-style: none;
+	display: inline-block;
+}
+
+.nav--link:active {
+	color: #fff;
+}

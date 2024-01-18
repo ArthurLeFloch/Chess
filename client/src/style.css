@@ -10,11 +10,33 @@ body {
 	font-family: sans-serif;
 }
 
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover, a.active {
+	text-decoration: underline;
+}
+
+#root {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+#screen {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	flex-grow: 1;
+}
+
 .board-container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: gray;
 }
 
 .board {
